@@ -10,6 +10,9 @@ Takehome Assessment for Parameter Solutions
 packages for this project: `pandas`, `numpy`, `pyarrow`.
 6. Install the required packages for this project by running the command `pip install -r requirements.txt`
 
+# Some Notes
+On the very first run, there may be a few rare instances where the `main.py` script takes longer than expected to run. On subsequent runs, it should alawys hit < 1s. This is probably caused by some "cold start" factors.
+
 # Problem 1: Calculating Rates
 1. Ensure you are at the root directory. i.e. If you type `ls` you should see the folders `rates_test` and `stdev_test`.
 2. Run the command `python ./rates_test/scripts/main.py`
