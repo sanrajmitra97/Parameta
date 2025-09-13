@@ -11,13 +11,14 @@ packages for this project: `pandas`, `numpy`, `pyarrow`.
 6. Install the required packages for this project by running the command `pip install -r requirements.txt`
 
 # Some Notes
-On the very first run, there may be a few rare instances where the `main.py` script takes longer than expected to run. On subsequent runs, it should alawys hit < 1s. This is probably caused by some "cold start" factors.
+On the very first run, there may be a few rare instances where the `main.py` script takes longer than expected to run. On subsequent runs, it should alawys hit < 1s. This is probably caused by some "cold start" factors. On a WSL2 system, it is < 1s on all runs. On a Mac, it takes > 1s on the first run, but all subsequent runs take < 1s.
 
 # Problem 1: Calculating Rates
 1. Ensure you are at the root directory. i.e. If you type `ls` you should see the folders `rates_test` and `stdev_test`.
 2. Run the command `python ./rates_test/scripts/main.py`
 3. Results will be stored in `./rates_test/results/rates_final_data.csv`
 4. The column of interest would be `new_price`.
+5. If there are any NaN values in `new_price`, it means that the one hour window condition was not met and there is insufficient data.
 
 # Problem 2: Calculating Rolling Standard Deviation
 1. Ensure you are at the root directory. i.e. If you type `ls` you should see the folders `rates_test` and `stdev_test`.
