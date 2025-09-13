@@ -1,5 +1,5 @@
 # Parameta
-Takehome Assessment for Parameter Solutions
+Takehome Assessment for Parameta Solutions
 
 # Prerequisites
 1. Clone this repository using the command `git clone https://github.com/sanrajmitra97/Parameta.git` or any other method you prefer.
