@@ -14,8 +14,10 @@ packages for this project: `pandas`, `numpy`, `pyarrow`.
 1. Ensure you are at the root directory. i.e. If you type `ls` you should see the folders `rates_test` and `stdev_test`.
 2. Run the command `python ./rates_test/scripts/main.py`
 3. Results will be stored in `./rates_test/results/rates_final_data.csv`
+4. The column of interest would be `new_price`.
 
 # Problem 2: Calculating Rolling Standard Deviation
 1. Ensure you are at the root directory. i.e. If you type `ls` you should see the folders `rates_test` and `stdev_test`.
 2. Run the command `python ./stdev_test/scripts/main.py`
 3. Results will be stored in `./stdev_test/results/stdev_test_output.csv`
+4. The standard deviations are under the columns <price_type>_stdev where price_type is bid, mid, or ask.
